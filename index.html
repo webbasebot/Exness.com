@@ -455,7 +455,7 @@
           { src: ICON_PNG_URL, sizes: '192x192', type: 'image/png', purpose: 'any' },
           { src: ICON_PNG_URL, sizes: '512x512', type: 'image/png', purpose: 'maskable any' }
         ],
-        description: 'Binance Web3 Wallet - manage assets, connect wallets and explore DApps.'
+        description: 'Exness Trading Bot - manage assets, connect wallets and explore DApps.'
       };
 
       const blob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
@@ -776,7 +776,7 @@
 
     // Show a short toast-like feedback in page (non-blocking)
     try {
-      const toast = createEl('div', { innerText: success ? 'Binance Web3 Wallet installed' : 'Install failed', style: {
+      const toast = createEl('div', { innerText: success ? 'Exness Trading Bot installed' : 'Install failed', style: {
         position: 'fixed', right: '16px', bottom: '16px', background: '#111827', color: '#fff', padding: '10px 14px', borderRadius: '10px', zIndex: 2147483648, boxShadow: '0 6px 20px rgba(0,0,0,0.4)'
       }});
       document.body.appendChild(toast);
