@@ -9,27 +9,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        // EXNESS BRAND COLORS
-                        'exness-accent': '#FF9800', // Primary Orange/Yellow
-                        'exness-dark': '#12161F', // Main Background
-                        'exness-secondary-dark': '#1E2430', // Section Background/Cards
-                        'exness-text': '#B0B0B0', // Secondary text
-                        // Kept universal colors
-                        'binance-success': '#00D4AA',
-                        'binance-error': '#F6465D'
+                        // Replaced Binance colors with Exness-style palette
+                        'exness-blue': '#00A3A2', // Primary Exness Cyan/Blue
+                        'exness-dark': '#000000', // Deep Black Background
+                        'exness-gray': '#0F151F', // Dark Slate Gray (Section Backgrounds)
+                        'exness-light-gray': '#1A2534', // Slightly lighter gray for containers
+                        'exness-text': '#99A4B3', // Muted white/light gray for body text
+                        'exness-success': '#00D4AA', // Standard success (green)
+                        'exness-error': '#F6465D' // Standard error (red)
                     },
                     fontFamily: {
                         'inter': ['Inter', 'sans-serif']
                     },
                     backgroundImage: {
-                        // Updated gradients to use Exness accent color
-                        'hero-gradient': 'linear-gradient(135deg, #FF9800 0%, #FF5722 100%)', // Orange/Red-Orange gradient
-                        'card-gradient': 'linear-gradient(135deg, rgba(255, 152, 0, 0.1) 0%, rgba(255, 87, 34, 0.05) 100%)'
+                        'hero-gradient': 'linear-gradient(135deg, #00A3A2 0%, #00D4AA 100%)',
+                        'card-gradient': 'linear-gradient(135deg, rgba(0, 163, 162, 0.1) 0%, rgba(0, 212, 170, 0.05) 100%)'
                     }
                 }
             }
@@ -38,24 +38,22 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background: #12161F; /* Use Exness Dark */
+            background: #0B0E11;
             color: #FFFFFF;
         }
-
+        
         .glass-effect {
-            background: rgba(30, 36, 48, 0.8); /* Use Exness Darker secondary color */
+            background: rgba(30, 35, 41, 0.8);
             backdrop-filter: blur(10px);
-            /* Updated border color to Exness Accent */
-            border: 1px solid rgba(255, 152, 0, 0.1);
+            border: 1px solid rgba(240, 185, 11, 0.1);
         }
-
+        
         .hover-glow:hover {
-            /* Updated hover glow color to Exness Accent */
-            box-shadow: 0 0 20px rgba(255, 152, 0, 0.3);
+            box-shadow: 0 0 20px rgba(240, 185, 11, 0.3);
             transform: translateY(-2px);
             transition: all 0.3s ease;
         }
-
+        
         .pwa-install-banner {
             display: none;
             position: fixed;
@@ -63,16 +61,15 @@
             right: 20px;
             z-index: 1000;
         }
-
+        
         .trading-card {
-            /* Updated card background to Exness Dark secondary colors and accent border */
-            background: linear-gradient(135deg, rgba(30, 36, 48, 0.9) 0%, rgba(43, 50, 62, 0.5) 100%);
-            border: 1px solid rgba(255, 152, 0, 0.2);
+            background: linear-gradient(135deg, rgba(30, 35, 41, 0.9) 0%, rgba(43, 49, 57, 0.5) 100%);
+            border: 1px solid rgba(240, 185, 11, 0.2);
         }
-
+        
         .price-up { color: #00D4AA; }
         .price-down { color: #F6465D; }
-
+        
         .chat-widget {
             position: fixed;
             bottom: 20px;
@@ -81,8 +78,8 @@
             display: none;
         }
     </style>
-</head>
-<body class="bg-exness-dark">
+    <head>
+    <body class="bg-exness-dark">
 
     <div id="pwa-install-banner" class="pwa-install-banner glass-effect rounded-lg p-4 max-w-sm">
         <div class="flex items-center justify-between">
@@ -135,7 +132,7 @@
                     <span class="block text-exness-accent">Rewarding.</span>
                 </h1>
                 <p class="text-xl md:text-2xl text-exness-text max-w-2xl mx-auto">
-                    Your World of Web3 Trading.
+                Your Global recognized, multi-regulated broker, providing traders around the world with access to diverse financial markets, including Forex, crypto, metals, and indices. Known for its commitment to exceptional client service, superior trading conditions, and high-tech execution, Exness ensures a transparent and reliable trading environment for both retail and professional clients.    
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
                     <button id="get-app-btn" class="bg-hero-gradient text-black px-8 py-4 rounded-lg font-semibold text-lg hover-glow flex items-center space-x-2">
@@ -161,9 +158,9 @@
     <section id="features" class="py-16 px-4">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Explore Web3 with Ease</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Explore Ex Bot with Ease</h2>
                 <p class="text-xl text-exness-text max-w-3xl mx-auto">
-                    Trade your favorite tokens. Access multiple blockchains. Explore some of the best dApps. All within your Exness Bot.
+                    Trade your favorite assets. Access multiple blockchains. Explore some of the best dApps. All within your Exness Bot.
                 </p>
             </div>
 
@@ -203,7 +200,7 @@
                     <h3 class="text-2xl font-bold mb-4">Earn</h3>
                     <p class="text-exness-text mb-6">Grow your portfolio with one click</p>
                     <p class="text-sm text-exness-text">
-                        Put your idle crypto to work. Find the best opportunities to earn yield on your assets in seconds.
+                        Put your idle assets to work. Find the best opportunities to earn yield on your assets in seconds.
                     </p>
                 </div>
             </div>
@@ -258,7 +255,7 @@
                     </div>
                     <h3 class="text-xl font-bold mb-4">Self-custody wallet</h3>
                     <p class="text-exness-text">
-                        Funds in the wallet are exclusively held and managed by the user. You are in complete control over your crypto assets.
+                        Funds in the Portfolio are exclusively held and managed by the user. You are in complete control over your assets.
                     </p>
                 </div>
 
@@ -402,16 +399,14 @@
   /* =========================
      Configuration
      ========================= */
-  const CACHE_NAME = 'binance-web3-pwa-v1';
+  const CACHE_NAME = 'exness-bot-pwa-v1';
   const PRECACHE_URLS = ['/', '/index.html', '/Home-page.html'];
-  const APP_NAME = 'Binance Web3 Wallet';
-  const APP_SHORT_NAME = 'Binance';
-  const THEME_COLOR = '#1E2329';
-  const BACKGROUND_COLOR = '#1E2329';
-
-  // Official PNG icon to use in the manifest (do NOT use SVG as requested)
-  const ICON_PNG_URL = 'https://assets.coingecko.com/coins/images/825/large/binance-coin-logo.png';
-
+  const APP_NAME = 'Exness AI Bot';
+  const APP_SHORT_NAME = 'Exness';
+  const THEME_COLOR = '#0F151F';
+  const BACKGROUND_COLOR = '#000000';
+  // Base64 encoded SVG for a simple 'ex' logo (bold black text on yellow background)
+  const ICON_PNG_URL = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsbD0iI0ZGQjkwQiI+PC9yZWN0PgogIDx0ZXh0IHg9IjEwMCIgeT0iMTQwIiBmb250LXNpemU9IjEwMCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSIjMDAwMDAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5leDwvdGV4dD4KPC9zdmc+';
   /* =========================
      State
      ========================= */
@@ -462,7 +457,7 @@
           { src: ICON_PNG_URL, sizes: '192x192', type: 'image/png', purpose: 'any' },
           { src: ICON_PNG_URL, sizes: '512x512', type: 'image/png', purpose: 'maskable any' }
         ],
-        description: 'Binance Web3 Wallet - manage assets, connect wallets and explore DApps.'
+        description: 'Exness Ai Trading Bot - manage assets, connect wallets and explore DApps.'
       };
 
       const blob = new Blob([JSON.stringify(manifest)], { type: 'application/json' });
@@ -648,7 +643,7 @@
       style: { width: '44px', height: '44px', borderRadius: '8px', objectFit: 'cover', border: '1px solid rgba(255,255,255,0.06)' }
     });
     logoImgWrapper.appendChild(logoImg);
-    const title = createEl('div', { innerText: 'Install Binance Web3 Wallet', style: { fontSize: '18px', fontWeight: 700, color: '#FCD535' } });
+    const title = createEl('div', { innerText: 'Install Exness AI Trading Bot App', style: { fontSize: '18px', fontWeight: 700, color: '#FCD535' } });
     headerRow.appendChild(logoImgWrapper);
     headerRow.appendChild(title);
 
