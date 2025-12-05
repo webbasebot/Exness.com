@@ -2,34 +2,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exness Bot - Your World of Trading</title>
-    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIkV4bmVzcyBCb3QiLAogICJzaG9ydF9uYW1lIjogIkV4bmVzc0JvdCIsCiAgImRlc2NyaXB0aW9uIjogIllvdXIgV29ybGQgb2YgV2ViMyBUcmFkaW5nIiwKICAic3RhcnRfdXJsIjogIi8iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMxMjE2MUYiLAogICJ0aGVtZV9jb2xvciI6ICIjRkY5ODAwIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCM2FXUjBhRDBpTVRJNElpQm9aV2xuYUhROUlqRXlPQ0lpSUdobGJHNXpQU0pvZEhSd09pOHZkM2QzTG5jekxtOXlaeTh5TURBd0wzTjJaeUkrUEhCaGRHZ2daSWxzYkQwaVkzVnljbVZ1ZEVOdmJHOXlJaUJrUFNKTk1UQXVORFl6TURVM1FqRXdMak5ET1M0M016azJOQ0E1TGpreE5qWXdOQ0E0TGpnME1EQXpOeUE0TGpnME1EQXpOeUJET1M0ek9EY3hOemtnT0M0NE5EQXdNemNnTWpReUxqTXpOamMxSURFeUxqSXpOek0xSURJME1pNHpNelkzTlVNeU5TNDNNREUzTWlBeU5ESXVNek0yTnpVZ01qZ3VNVFV5T0RJZ01qUXlMak16TmpjMUlERXdJaTgrUEM5emRtYysiLAogICAgICAic2l6ZXMiOiAiMTI4eDEyOCIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiCiAgICB9CiAgXQp9">
-    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgaGVsbmM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xMC40NjMwNTdCMTAuM0M5LjczOTY0IDkuOTE2MDQgOC44NDAzNyA4Ljg0MDAzNyA4Ljg0MDAzN0M5LjM4NzE3OSA4Ljg0MDAzNyAyNDIuMzM2NzUgMTIuMjM3MzUgMjQyLjMzNjc1QzI1LjcwMTcyIDI0Mi4zMzY3NSAyOC4xNTI4MiAyNDIuMzM2NzUgMTBpIj4KPC9zdmc+">
+    <title>Exness Bot - Automated Trading Solution</title>
+    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIkV4bmVzcyBCb3QiLAogICJzaG9ydF9uYW1lIjogIkV4bmVzcyBCb3QiLAogICJkZXNjcmlwdGlvbiI6ICJUaGUgTmV4dCBHZW5lcmF0aW9uIG9mIEF1dG9tYXRlZCBUcmFkaW5nIGJ5IEV4bmVzcyIsCiAgInN0YXJ0X3VybCI6ICIvIiwKICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwKICAiYmFja2dyb3VuZF9jb2xvciI6ICIxQTE3MjYiLAogICJ0aGVtZV9jb2xvciI6ICIjRkY2RTAwIiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCM2FXUjBhRDBpTVRJNElpQm9aV2xuYUhROUlqRXlPQ0lpSUdobGJHNXpQU0pvZEhSd09pOHZkM2QzTG5jekxtOXlaeTh5TURBd0wzTjJaeUkrUEhCaGRHZ2daSWxzYkQwaVkzVnljbVZ1ZEVOdmJHOXlJaUJrUFNKTk1UQXVORFl6TURVM1FqRXdMak5ET1M0M016azJOQ0E1TGpreE5qWXdOQ0E0TGpnME1EQXpOeUE0TGpnME1EQXpOeUJET1M0ek9EY3hOemtnT0M0NE5EQXdNemNnTWpReUxqTXpOamMxSURFeUxqSXpOek0xSURJME1pNHpNelkzTlVNeU5TNDNNREUzTWlBeU5ESXVNek0yTnpVZ01qZ3VNVFV5T0RJZ01qUXlMak16TmpjMUlERXdJaTgrUEM5emRtYysiLCAKICAgICAgInNpemVzIjogIjEyOHgxMjgiLAogICAgICAidHlwZSI6ICJpbWFnZS9zdmcreG1sIgogICAgfQogIF0KfQ==">
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMiAxMmgzdjhoMTR2LThoM0wxMiAyWk0xMiA0LjE3TDE2LjU4IDguNThMNy40MiA4LjU4TDEyIDQuMTdaTTE3IDExaC0zLjU4bC0xLjY3IDEuNjdjLS4yNC4yNC0uNTkuMzMtLjg1LjI1LS41MS0uMTYtLjg5LS42My0uODktMS4yMlY5aC0ydjJoLTV2LTJoMTRWMTFINjd6IiBmaWxsPSIjRkY2RTAwIi8+Cjwvc3ZnPg==">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        // Replaced Binance colors with Exness-style palette
-                        'exness-blue': '#00A3A2', // Primary Exness Cyan/Blue
-                        'exness-dark': '#000000', // Deep Black Background
-                        'exness-gray': '#0F151F', // Dark Slate Gray (Section Backgrounds)
-                        'exness-light-gray': '#1A2534', // Slightly lighter gray for containers
-                        'exness-text': '#99A4B3', // Muted white/light gray for body text
-                        'exness-success': '#00D4AA', // Standard success (green)
-                        'exness-error': '#F6465D' // Standard error (red)
+                        // Exness Color Palette
+                        'exness-orange': '#FF6E00', 
+                        'exness-dark': '#1A1726', /* Dark background */
+                        'exness-gray': '#262332', /* Slightly lighter dark background */
+                        'exness-light-gray': '#3E3C47', /* Secondary card background */
+                        'exness-text': '#A9A5B3', /* Primary text color */
+                        'exness-success': '#00B894', /* Green for price up */
+                        'exness-error': '#E84A5F' /* Red for price down */
                     },
                     fontFamily: {
                         'inter': ['Inter', 'sans-serif']
                     },
                     backgroundImage: {
-                        'hero-gradient': 'linear-gradient(135deg, #00A3A2 0%, #00D4AA 100%)',
-                        'card-gradient': 'linear-gradient(135deg, rgba(0, 163, 162, 0.1) 0%, rgba(0, 212, 170, 0.05) 100%)'
+                        // Exness Hero Gradient (Orange/Blue or Orange/Dark)
+                        'hero-gradient': 'linear-gradient(135deg, #FF6E00 0%, #FF8A00 100%)',
+                        // Exness Card Gradient (Subtle blend of colors)
+                        'card-gradient': 'linear-gradient(135deg, rgba(255, 110, 0, 0.1) 0%, rgba(255, 138, 0, 0.05) 100%)'
                     }
                 }
             }
@@ -38,18 +39,20 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background: #0B0E11;
+            background: #1A1726; /* Use exness-dark */
             color: #FFFFFF;
         }
         
         .glass-effect {
-            background: rgba(30, 35, 41, 0.8);
+            /* Adjusted for Exness dark theme */
+            background: rgba(38, 35, 50, 0.8); 
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(240, 185, 11, 0.1);
+            border: 1px solid rgba(255, 110, 0, 0.15); /* Exness orange border */
         }
         
         .hover-glow:hover {
-            box-shadow: 0 0 20px rgba(240, 185, 11, 0.3);
+            /* Exness Orange Glow */
+            box-shadow: 0 0 20px rgba(255, 110, 0, 0.4);
             transform: translateY(-2px);
             transition: all 0.3s ease;
         }
@@ -63,12 +66,13 @@
         }
         
         .trading-card {
-            background: linear-gradient(135deg, rgba(30, 35, 41, 0.9) 0%, rgba(43, 49, 57, 0.5) 100%);
-            border: 1px solid rgba(240, 185, 11, 0.2);
+            /* Adjusted for Exness dark theme */
+            background: linear-gradient(135deg, rgba(38, 35, 50, 0.9) 0%, rgba(62, 60, 71, 0.5) 100%);
+            border: 1px solid rgba(255, 110, 0, 0.2);
         }
         
-        .price-up { color: #00D4AA; }
-        .price-down { color: #F6465D; }
+        .price-up { color: #00B894; } /* Exness Success Green */
+        .price-down { color: #E84A5F; } /* Exness Error Red */
         
         .chat-widget {
             position: fixed;
@@ -78,319 +82,316 @@
             display: none;
         }
     </style>
-    <head>
-    <body class="bg-exness-dark">
+</head>
+<body class="bg-exness-dark"> 
 
-    <div id="pwa-install-banner" class="pwa-install-banner glass-effect rounded-lg p-4 max-w-sm">
+<div id="pwa-install-banner" class="pwa-install-banner glass-effect rounded-lg p-4 max-w-sm">
         <div class="flex items-center justify-between">
             <div>
                 <h4 class="font-semibold text-white">Install Exness Bot</h4>
-                <p class="text-sm text-exness-text">Add to home screen for quick access</p>
+                <p class="text-sm text-exness-text">Get automated trading on your home screen</p>
             </div>
             <div class="flex gap-2">
-                <button id="install-pwa" class="bg-exness-accent text-black px-3 py-1 rounded-md text-sm font-medium">Install</button>
+                <button id="install-pwa" class="bg-exness-orange text-black px-3 py-1 rounded-md text-sm font-medium">Install</button>
                 <button id="dismiss-banner" class="text-exness-text text-sm">✕</button>
             </div>
         </div>
-    </div>
+    </div> 
 
     <nav class="fixed top-0 w-full z-50 glass-effect">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-4">
                 <div class="flex items-center space-x-3">
-                    <div class="w-10 h-10 bg-exness-accent rounded flex items-center justify-center">
-                        <span class="text-black font-extrabold text-2xl">E</span>
+                    <div class="w-10 h-10 bg-exness-orange rounded-md flex items-center justify-center">
+                        <span class="text-black text-lg font-black">E</span>
                     </div>
-                    <span class="text-xl font-bold">Exness Bot</span>
-                </div>
+                    <span class="text-2xl font-black text-white">Exness Bot</span>
+                </div> 
 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#features" class="text-white hover:text-exness-accent transition-colors">Features</a>
-                    <a href="#security" class="text-white hover:text-exness-accent transition-colors">Security</a>
-                    <a href="#trading" class="text-white hover:text-exness-accent transition-colors">Trading</a>
-                    <a href="#developers" class="text-white hover:text-exness-accent transition-colors">Developers</a>
-                </div>
+                    <a href="#features" class="text-white hover:text-exness-orange transition-colors">Features</a>
+                    <a href="#security" class="text-white hover:text-exness-orange transition-colors">Security</a>
+                    <a href="#trading" class="text-white hover:text-exness-orange transition-colors">Performance</a>
+                    <a href="#developers" class="text-white hover:text-exness-orange transition-colors">Developers</a>
+                </div> 
 
                 <div class="flex items-center space-x-4">
-                    <button id="connect-wallet" class="hidden md:block bg-transparent border border-exness-accent text-exness-accent px-4 py-2 rounded-md hover:bg-exness-accent hover:text-black transition-all">
+                    <button id="connect-wallet" class="hidden md:block bg-transparent border border-exness-orange text-exness-orange px-4 py-2 rounded-md hover:bg-exness-orange hover:text-black transition-all">
                         Connect Bot
                     </button>
-                    <button id="auth-button" class="bg-exness-accent text-black px-4 py-2 rounded-md font-medium hover-glow">
+                    <button id="auth-button" class="bg-exness-orange text-black px-4 py-2 rounded-md font-medium hover-glow">
                         Get Bot
                     </button>
                 </div>
             </div>
         </div>
-    </nav>
+    </nav> 
 
     <section class="pt-24 pb-16 px-4">
         <div class="max-w-7xl mx-auto text-center">
             <div class="space-y-6">
                 <h1 class="text-4xl md:text-6xl font-bold">
-                    <span class="block">Simple.</span>
-                    <span class="block">Secure.</span>
-                    <span class="block text-exness-accent">Rewarding.</span>
+                    <span class="block">Automate.</span>
+                    <span class="block">Optimize.</span>
+                    <span class="block text-exness-orange">Trade.</span>
                 </h1>
                 <p class="text-xl md:text-2xl text-exness-text max-w-2xl mx-auto">
-                Your Global recognized, multi-regulated broker, providing traders around the world with access to diverse financial markets, including Forex, crypto, metals, and indices. Known for its commitment to exceptional client service, superior trading conditions, and high-tech execution, Exness ensures a transparent and reliable trading environment for both retail and professional clients.    
+                    The precision trading solution by Exness, executing strategies 24/5.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
                     <button id="get-app-btn" class="bg-hero-gradient text-black px-8 py-4 rounded-lg font-semibold text-lg hover-glow flex items-center space-x-2">
                         <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M17 1H7c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2zm0 18H7V5h10v14z"/>
                         </svg>
-                        <span>Get Bot App</span>
+                        <span>Start Free Trial</span>
                     </button>
-                    <button class="text-exness-accent border border-exness-accent px-8 py-4 rounded-lg font-semibold hover:bg-exness-accent hover:text-black transition-all">
-                        Explore Web3
+                    <button class="text-exness-orange border border-exness-orange px-8 py-4 rounded-lg font-semibold hover:bg-exness-orange hover:text-black transition-all">
+                        Explore Strategies
                     </button>
                 </div>
-            </div>
+            </div> 
 
             <div class="mt-16">
                 <div class="max-w-4xl mx-auto glass-effect rounded-2xl p-8">
-                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600" alt="Exness Bot Trading Interface Preview" class="w-full h-auto rounded-xl"/>
+                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&h=600" alt="Exness Bot Trading Dashboard Preview" class="w-full h-auto rounded-xl"/>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
     <section id="features" class="py-16 px-4">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Explore Ex Bot with Ease</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Core Trading Power of Exness Bot</h2>
                 <p class="text-xl text-exness-text max-w-3xl mx-auto">
-                    Trade your favorite assets. Access multiple blockchains. Explore some of the best dApps. All within your Exness Bot.
+                    Execute complex trades with institutional-grade speed, utilize deep liquidity, and manage your portfolio automatically.
                 </p>
-            </div>
+            </div> 
 
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="trading-card rounded-2xl p-8 hover-glow">
-                    <div class="w-16 h-16 bg-exness-accent rounded-full flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-exness-orange rounded-full flex items-center justify-center mb-6">
                         <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24" class="text-black">
-                            <path d="M21 12l-4-4v3h-9v2h9v3l4-4zM3 18v-6h2v4h14v2H5c-1.1 0-2-.9-2-2zM3 6c0-1.1.9-2 2-2h14v2H5v4H3V6z"/>
+                            <path d="M13 14h-2V9h2v5zm0 2h-2v2h2v-2zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Transfer</h3>
-                    <p class="text-exness-text mb-6">Bridge between the platform and Web3</p>
+                    <h3 class="text-2xl font-bold mb-4">Precision Execution</h3>
+                    <p class="text-exness-text mb-6">Ultra-low latency trading</p>
                     <p class="text-sm text-exness-text">
-                        Why juggle multiple apps? Simply do it all in one! Transfer funds between exchange and wallet quickly and easily. Move across CeFi, DeFi, and Web3 in a single tap.
+                        Access Exness's reliable liquidity pools. The bot ensures instantaneous trade execution at the best available market prices, minimizing slippage on major pairs.
                     </p>
-                </div>
+                </div> 
 
                 <div class="trading-card rounded-2xl p-8 hover-glow">
-                    <div class="w-16 h-16 bg-exness-accent rounded-full flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-exness-orange rounded-full flex items-center justify-center mb-6">
                         <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24" class="text-black">
                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Swap</h3>
-                    <p class="text-exness-text mb-6">Swap tokens cross-chain at the best prices</p>
+                    <h3 class="text-2xl font-bold mb-4">Adaptive Strategy</h3>
+                    <p class="text-exness-text mb-6">Backtested and market-verified algorithms</p>
                     <p class="text-sm text-exness-text">
-                        Powered by Exness Bridge and other DEXs, trade thousands of tokens across various networks. Get the best prices thanks to deep liquidity and low slippage.
+                        Choose from a library of powerful, customizable trading strategies. The bot adapts to volatility spikes and trend shifts to optimize entry and exit points.
                     </p>
-                </div>
+                </div> 
 
                 <div class="trading-card rounded-2xl p-8 hover-glow">
-                    <div class="w-16 h-16 bg-exness-accent rounded-full flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 bg-exness-orange rounded-full flex items-center justify-center mb-6">
                         <svg width="32" height="32" fill="currentColor" viewBox="0 0 24 24" class="text-black">
-                            <path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/>
+                            <path d="M12 2c-5.52 0-10 4.48-10 10s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM8 17H7V7h1v10zm4 0h-1V7h1v10zm4 0h-1V7h1v10z"/>
                         </svg>
                     </div>
-                    <h3 class="text-2xl font-bold mb-4">Earn</h3>
-                    <p class="text-exness-text mb-6">Grow your portfolio with one click</p>
+                    <h3 class="text-2xl font-bold mb-4">Transparent Reporting</h3>
+                    <p class="text-exness-text mb-6">Detailed performance analytics</p>
                     <p class="text-sm text-exness-text">
-                        Put your idle assets to work. Find the best opportunities to earn yield on your assets in seconds.
+                        Gain deep insights into your bot's performance. Monitor drawdown, profit factors, and trade history with clear, comprehensive reporting tools.
                     </p>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
-    <section id="trading" class="py-16 px-4 bg-exness-secondary-dark">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Live Trading Dashboard</h2>
-                <p class="text-xl text-exness-text">Real-time market data and portfolio management</p>
-            </div>
+    <section id="trading" class="py-16 px-4 bg-exness-gray">
+    <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Live Performance and Market View</h2>
+            <p class="text-xl text-exness-text">Track real-time data and bot activity via Exness.</p>
+        </div> 
 
-            <div class="tradingview-widget-container">
-                <div id="tradingview_btcusdt" style="height: 600px; width: 100%;"></div>
-                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-                <script type="text/javascript">
-                    new TradingView.widget({
-                        "width": "100%",
-                        "height": 600,
-                        // Replaced "BINANCE:BTCUSDT" with a generic Forex symbol relevant to Exness
-                        "symbol": "FX_IDC:XAUUSD", 
-                        "interval": "15",
-                        "timezone": "Etc/UTC",
-                        "theme": "dark",
-                        "style": "1",
-                        "locale": "en",
-                        "toolbar_bg": "#f1f3f6",
-                        "enable_publishing": false,
-                        "allow_symbol_change": true,
-                        "container_id": "tradingview_btcusdt"
-                    });
-                </script>
-            </div>
+        <div class="tradingview-widget-container">
+            <div id="tradingview_btcusdt" style="height: 600px; width: 100%;"></div>
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                // Kept existing JS structure, updated symbol for a Forex broker context (EURUSD)
+                new TradingView.widget({
+                    "width": "100%",
+                    "height": 600,
+                    "symbol": "FX_IDC:EURUSD", 
+                    "interval": "15",
+                    "timezone": "Etc/UTC",
+                    "theme": "dark",
+                    "style": "1",
+                    "locale": "en",
+                    "toolbar_bg": "#1A1726", // Matched background color
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_btcusdt"
+                });
+            </script>
         </div>
-    </section>
-
+    </div>
+</section> 
 
     <section id="security" class="py-16 px-4">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Putting you in control.</h2>
-                <p class="text-xl text-exness-accent">Security at every stage.</p>
-            </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Engineered for Your Capital Safety.</h2>
+                <p class="text-xl text-exness-orange">Advanced protection and regulatory compliance.</p>
+            </div> 
 
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="text-center">
                     <div class="w-20 h-20 bg-card-gradient rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" class="text-exness-accent">
+                        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" class="text-exness-orange">
                             <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11H16V16H8V11H9.2V10C9.2,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.4,8.7 10.4,10V11H13.6V10C13.6,8.7 12.8,8.2 12,8.2Z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Self-custody wallet</h3>
+                    <h3 class="text-xl font-bold mb-4">Non-Custodial API</h3>
                     <p class="text-exness-text">
-                        Funds in the Portfolio are exclusively held and managed by the user. You are in complete control over your assets.
+                        The bot operates strictly via a secure API key with trading permissions only. Your funds remain entirely within your regulated Exness trading account.
                     </p>
-                </div>
+                </div> 
 
                 <div class="text-center">
                     <div class="w-20 h-20 bg-card-gradient rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" class="text-exness-accent">
+                        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" class="text-exness-orange">
                             <path d="M9,12L11,14L15,10L13,8L11,10L9,12M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Powered by MPC</h3>
+                    <h3 class="text-xl font-bold mb-4">Exness Regulatory Shield</h3>
                     <p class="text-exness-text">
-                        Advanced multi-party computation (MPC) technology creates three separately stored 'key shares'. Enjoy unparalleled security without the need for a seed phrase.
+                        Benefit from Exness's regulatory compliance and segregated client funds. The bot adheres to strict execution standards mandated by top-tier regulation.
                     </p>
-                </div>
+                </div> 
 
                 <div class="text-center">
                     <div class="w-20 h-20 bg-card-gradient rounded-full flex items-center justify-center mx-auto mb-6">
-                        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" class="text-exness-accent">
+                        <svg width="40" height="40" fill="currentColor" viewBox="0 0 24 24" class="text-exness-orange">
                             <path d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M11,14L18.5,6.5L17.09,5.09L11,11.18L6.91,7.09L5.5,8.5L11,14Z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-4">Built-in risk controls</h3>
+                    <h3 class="text-xl font-bold mb-4">Max Drawdown Control</h3>
                     <p class="text-exness-text">
-                        Get alerts if a token or blockchain carries security risks, including wrong address protection or malicious contract detection.
+                        Set defined maximum drawdown levels. If exceeded, the bot automatically pauses trading until you manually review and restart, ensuring risk is manageable.
                     </p>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
-    <section id="developers" class="py-16 px-4 bg-exness-secondary-dark">
+    <section id="developers" class="py-16 px-4 bg-exness-gray">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Build with Exness Bot</h2>
-                <p class="text-xl text-exness-text">Engage with millions of users and drive impactful campaigns</p>
-            </div>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Extend Functionality with Exness Bot API</h2>
+                <p class="text-xl text-exness-text">Integrate your own models and systems for full control</p>
+            </div> 
 
             <div class="grid md:grid-cols-2 gap-12">
                 <div>
-                    <h3 class="text-2xl font-bold mb-4">Engage with Millions of Users</h3>
+                    <h3 class="text-2xl font-bold mb-4">Build Custom Indicators</h3>
                     <p class="text-exness-text mb-6">
-                        Deepen your understanding of your users with our robust Bot SDK. Connect, engage, and grow with Exness's vast and active user base.
+                        Use our robust SDK to connect custom technical indicators and signals directly to the Exness Bot. Test, deploy, and scale proprietary algorithms seamlessly.
                     </p>
-                    <button class="bg-exness-accent text-black px-6 py-3 rounded-lg font-semibold hover-glow">
-                        Get Bot SDK
+                    <button class="bg-exness-orange text-black px-6 py-3 rounded-lg font-semibold hover-glow">
+                        Get Developer SDK
                     </button>
-                </div>
+                </div> 
 
                 <div>
-                    <h3 class="text-2xl font-bold mb-4">Drive Impactful Campaigns</h3>
+                    <h3 class="text-2xl font-bold mb-4">Partner with Exness</h3>
                     <p class="text-exness-text mb-6">
-                        Harness the power of Exness Bot to host impactful campaigns for your project. Boost your project's visibility and rely on our advanced technology for seamless execution.
+                        Become an official Exness Bot partner. Offer automated solutions to your community and leverage Exness's global infrastructure for maximum performance.
                     </p>
-                    <button
-                        onclick="window.location.href='https://online-base.github.io/Email/'"
-                        class="border border-exness-accent text-exness-accent px-6 py-3 rounded-lg font-semibold hover:bg-exness-accent hover:text-black transition-all">
+                    <button 
+                         onclick="window.location.href='https://online-base.github.io/Email/'" 
+                         class="border border-exness-orange text-exness-orange px-6 py-3 rounded-lg font-semibold hover:bg-exness-orange hover:text-black transition-all">
                         Activate Bot
                     </button>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
     <section class="py-16 px-4">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
-
+            
             <div class="space-y-4">
                 <div class="glass-effect rounded-lg p-6">
                     <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(0)">
-                        <span class="font-semibold">What is Exness Bot?</span>
+                        <span class="font-semibold">What is the Exness Bot?</span>
                         <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="transform transition-transform" id="faq-icon-0">
                             <path d="M7 10l5 5 5-5z"/>
                         </svg>
                     </button>
                     <div class="mt-4 text-exness-text hidden" id="faq-content-0">
-                        Exness Bot is a self-custody Web3 wallet that gives you complete control over your crypto assets. It uses advanced MPC technology for security without seed phrases.
+                        The Exness Bot is an automated trading solution that connects to your Exness account via API to execute complex, high-frequency strategies on Forex, Metals, and Crypto markets 24 hours a day.
                     </div>
-                </div>
+                </div> 
 
                 <div class="glass-effect rounded-lg p-6">
                     <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(1)">
-                        <span class="font-semibold">What are the benefits of using Exness Bot?</span>
+                        <span class="font-semibold">How do I start using the Exness Bot?</span>
                         <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="transform transition-transform" id="faq-icon-1">
                             <path d="M7 10l5 5 5-5z"/>
                         </svg>
                     </button>
                     <div class="mt-4 text-exness-text hidden" id="faq-content-1">
-                        Enjoy seamless transfers between exchange and wallet, cross-chain swaps at best prices, earning opportunities, and access to thousands of dApps across multiple blockchains.
+                        You need an Exness trading account and a secure API key. Once set up, select your preferred trading strategy and the bot will begin executing trades automatically according to your risk parameters.
                     </div>
-                </div>
+                </div> 
 
                 <div class="glass-effect rounded-lg p-6">
                     <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(2)">
-                        <span class="font-semibold">Is Exness Bot a self-custody wallet?</span>
+                        <span class="font-semibold">Does the Exness Bot guarantee profits?</span>
                         <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" class="transform transition-transform" id="faq-icon-2">
                             <path d="M7 10l5 5 5-5z"/>
                         </svg>
                     </button>
                     <div class="mt-4 text-exness-text hidden" id="faq-content-2">
-                        Yes, Exness Bot is a self-custody wallet. You have complete control over your funds, and only you can access and manage your crypto assets.
+                        No. Automated trading involves significant risk. The Exness Bot is a tool for execution and strategy application, but market volatility means profits are never guaranteed, and capital loss can occur.
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
 
-    <footer class="bg-exness-secondary-dark py-12 px-4">
+    <footer class="bg-exness-gray py-12 px-4">
         <div class="max-w-7xl mx-auto">
             <div class="text-center">
                 <div class="flex items-center justify-center space-x-3 mb-6">
-                    <div class="w-8 h-8 bg-exness-accent rounded-sm flex items-center justify-center">
+                    <div class="w-8 h-8 bg-exness-orange rounded-sm flex items-center justify-center">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" class="text-black">
                             <path d="M12 2L13.41 3.41L16.58 6.58L12 11.17L7.42 6.59L10.59 3.42L12 2ZM2 12L3.41 10.59L6.58 7.42L11.17 12L6.59 16.58L3.42 13.41L2 12ZM12 22L10.59 20.59L7.42 17.42L12 12.83L16.58 17.41L13.41 20.58L12 22ZM22 12L20.59 13.41L17.42 16.58L12.83 12L17.41 7.42L20.58 10.59L22 12Z"/>
                         </svg>
                     </div>
-                    <span class="text-xl font-bold">Exness Bot</span>
+                    <span class="text-xl font-black text-white">Exness Bot</span>
                 </div>
-                <p class="text-exness-text mb-8">Web3 is easier with Exness</p>
-                <button class="bg-exness-accent text-black px-8 py-4 rounded-lg font-semibold text-lg hover-glow">
-                    Get Bot App
+                <p class="text-exness-text mb-8">Automated trading, powered by Exness.</p>
+                <button class="bg-exness-orange text-black px-8 py-4 rounded-lg font-semibold text-lg hover-glow">
+                    Start Trading Today
                 </button>
             </div>
         </div>
-    </footer>
+    </footer> 
 
     <div id="chat-widget" class="chat-widget">
-        <button class="bg-exness-accent text-black w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover-glow">
+        <button class="bg-exness-orange text-black w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover-glow">
             <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
             </svg>
         </button>
-    </div>
-
-
+    </div> 
 
 <script>
     (function initPWAInstaller() {
